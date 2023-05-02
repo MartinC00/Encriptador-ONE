@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="../Tools/reset.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="../CSS/style.css">
 		<title>Encriptador TXT</title>
 	</head>
@@ -14,12 +14,23 @@
 		</header>
 
 		<main>
+
 			<section class="input-section">
-				<textarea class="input-textarea" autofocus placeholder="Ingrese el texto aqui" onkeypress="return (event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32)" required></textarea>
-				<img src="../Images/signo-exclamacion.svg" class="signo-exclamacion" alt="Signo Exclamacion">
-				<p class="txt-advertencia">Solo letras minúsculas son permitidas</p>
-				<input type="button" value="Encriptar" name="encriptar" class="encriptar-button">		
-				<input type="button" value="Desencriptar" name="desencriptar" class="desencriptar-button">		
+				
+				<div class="input-textarea">
+					<textarea autofocus placeholder="Ingrese el texto aqui" onkeypress="return (event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32)" required></textarea>
+				</div>
+				
+				<div class="input-encriptacion">
+					<div class="advertencia-container">
+						<img src="../Images/signo-exclamacion.svg" class="signo-advertencia" alt="Signo Advertencia">
+						<p class="txt-advertencia">Solo letras minúsculas son permitidas</p>
+					</div>
+
+					<input type="button" value="Encriptar" name="encriptar" class="encriptar-button">		
+					<input type="button" value="Desencriptar" name="desencriptar" class="desencriptar-button">		
+				</div>
+
 			</section>
 
 			<section class="output-section">
@@ -28,10 +39,9 @@
 				<p class="not-found-text">Ingresa el texto que desees encriptar o desencriptar</p>
 
 			</section>
+
 		</main>
-		<footer>
-			<p>FOOTER</p>
-		</footer>
+		
 	</body>
 </html>
 

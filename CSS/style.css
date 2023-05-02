@@ -2,34 +2,48 @@ html{
 	background: lightgrey;
 }
 
-
 .img-logo{
 	margin: 2em 0 0 2em;
-}
+} 
 
 main{
+	padding: 30px;
 	display: flex;
-	width: 100%;
 }
 
-
+/* SECTION IZQUIERDA */
 
 .input-section{
 	margin: 10% 0 0 15%;
-	flex: 2
+    display: flex;
+    flex: 2 auto;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+
 .input-textarea{
-	display: block;
+
+}
+
+.input-encriptacion{
+
+}
+
+.txt-advertencia{
+	display: inline;
 }
 
 
+/* SECTION DERECHA */
 
 .output-section{
-	height: 100%;
+	display: flex;
+    flex-direction: column;
 }
 
 .munieco{
-
+	
 }
 
 .not-found-title{
@@ -40,6 +54,7 @@ main{
 .not-found-text{
 	text-align: center;
 }
+
 
 footer p{
 	text-align: center;
