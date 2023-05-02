@@ -1,9 +1,14 @@
-html{
+*{
 	background: lightgrey;
+	/*font-family: 'Inter';
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 150%;*/
 }
 
 .img-logo{
 	margin: 2em 0 0 2em;
+	width: 5%;
 } 
 
 main{
@@ -11,7 +16,7 @@ main{
 	display: flex;
 }
 
-/* SECTION IZQUIERDA */
+/* ------- LEFT SECTION ------- */
 
 .input-section{
 	margin: 10% 0 0 15%;
@@ -35,15 +40,23 @@ main{
 }
 
 
-/* SECTION DERECHA */
+/* ------- RIGHT SECTION ------- */
 
 .output-section{
+
+}
+
+.encrypt-decrypt-msg{
+/*	border: none;*/
+}
+
+.output-section-not-found{
 	display: flex;
     flex-direction: column;
 }
 
 .munieco{
-	
+
 }
 
 .not-found-title{
@@ -55,6 +68,8 @@ main{
 	text-align: center;
 }
 
+
+/* ------- END ------- */
 
 footer p{
 	text-align: center;

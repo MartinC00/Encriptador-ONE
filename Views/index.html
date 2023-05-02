@@ -5,6 +5,9 @@
 		<link rel="stylesheet" href="../Tools/reset.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="../CSS/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 		<title>Encriptador TXT</title>
 	</head>
 	
@@ -18,25 +21,34 @@
 			<section class="input-section">
 				
 				<div class="input-textarea">
-					<textarea autofocus placeholder="Ingrese el texto aqui" onkeypress="return (event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32)" required></textarea>
+					<textarea cols="30" rows="10" autofocus placeholder="Ingrese el texto aqui" onkeypress="return (event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32)" required></textarea>
 				</div>
 				
 				<div class="input-encriptacion">
 					<div class="advertencia-container">
 						<img src="../Images/signo-exclamacion.svg" class="signo-advertencia" alt="Signo Advertencia">
-						<p class="txt-advertencia">Solo letras minúsculas son permitidas</p>
+						<h6 class="txt-advertencia">Solo letras minúsculas son permitidas</h6>
 					</div>
 
-					<input type="button" value="Encriptar" name="encriptar" class="encriptar-button">		
-					<input type="button" value="Desencriptar" name="desencriptar" class="desencriptar-button">		
+					<button class="encriptar-button">Encriptar</button>
+					<button class="desencriptar-button">Desencriptar</button>
+						
 				</div>
 
 			</section>
 
 			<section class="output-section">
-				<img src="../Images/munieco.svg" class="munieco" alt="Personaje buscando">
-				<p class="not-found-title">Ningún mensaje fue encontrado</p>
-				<p class="not-found-text">Ingresa el texto que desees encriptar o desencriptar</p>
+			
+				<section class="output-section-not-found">
+					<img src="../Images/munieco.svg" class="munieco" alt="Personaje buscando">
+					<p class="not-found-title">Ningún mensaje fue encontrado</p>
+					<p class="not-found-text">Ingresa el texto que desees encriptar o desencriptar</p>
+				</section>
+
+				<div>
+					<textarea readonly class="encrypt-decrypt-msg"></textarea>
+					<button class="copiar">Copiar</button>
+				</div>
 
 			</section>
 
@@ -45,52 +57,4 @@
 	</body>
 </html>
 
-<script>
-	
-	let encriptarButton = document.querySelector("input[name='encriptar']");
-	let desencriptarButton = document.querySelector("input[name='desencriptar']");
-	
-	encriptarButton.addEventListener("click", () => {
-  		let textoEncriptado = encriptar();
- 		console.log(textoEncriptado);
-	});
-
-	desencriptarButton.addEventListener("click", (encriptado) => {
-  		let textoDesencriptado = desencriptar();
- 		console.log(textoDesencriptado);
-	});
-
-
-	function encriptar() 
-	{
-		let text = (document.querySelector("textarea")).value;
-	  	
-	  	for (let vocal in keys) 
-	  	{
-		    const regex = new RegExp(vocal, "g");
-		    text = text.replace(regex, keys[vocal]);
-	  	}
-	  	return text;
-	}
-
-	function desencriptar()
-	{
-		let text = (document.querySelector("textarea")).value;
-		for(let vocal in keys)
-		{
-			const reemplazo = keys[vocal];
-			const regex = new RegExp(reemplazo, "g");
-			text = text.replace(regex, vocal);
-		}
-		return text;
-	}
-
-	const keys = {
-	  "e": "enter",
-	  "i": "imes",
-	  "a": "ai",
-	  "o": "ober",
-	  "u": "ufat"
-	};
-
-</script>
+<script src="../JS/script.js"></script>
