@@ -1,0 +1,48 @@
+html{
+	background: lightgrey;
+}
+
+
+.img-logo{
+	margin: 2em 0 0 2em;
+}
+
+main{
+	display: flex;
+	width: 100%;
+}
+
+
+
+.input-section{
+	margin: 10% 0 0 15%;
+	flex: 2
+}
+.input-textarea{
+	display: block;
+}
+
+
+
+.output-section{
+	height: 100%;
+}
+
+.munieco{
+
+}
+
+.not-found-title{
+	text-align: center;
+	font-weight: bold;
+}
+
+.not-found-text{
+	text-align: center;
+}
+
+footer p{
+	text-align: center;
+	padding: 3em;
+	background: lightgoldenrodyellow;
+}
