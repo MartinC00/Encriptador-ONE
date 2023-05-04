@@ -11,49 +11,54 @@
 		<title>Encriptador TXT</title>
 	</head>
 	
+
 	<body>
-		<header>
-			<img class="img-logo" src="Images/logo.svg" alt="Logo de Alura">
+		<header class="header">
+			<div class="header-imgs">
+				<img class="oracle-logo" src="Images/oracle.png" alt="Logo de Alura">
+				<img class="alura-logo" src="Images/alura.svg" alt="Logo de Alura">
+			</div>
 		</header>
+		
+			<main class="main">
 
-		<main>
+				<section class="input-section">
+					
+					<div class="input-textarea">
+						<textarea cols="30" rows="10" autofocus placeholder="Ingrese el texto aqui" onkeypress="return (event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32)" required></textarea>
+					</div>
+					
+					<div class="input-encriptacion">
+						<div class="advertencia-container">
+							<img src="Images/signo-exclamacion.svg" class="signo-advertencia" alt="Signo Advertencia">
+							<h6 class="txt-advertencia">Solo letras minúsculas son permitidas</h6>
+						</div>
 
-			<section class="input-section">
-				
-				<div class="input-textarea">
-					<textarea cols="30" rows="10" autofocus placeholder="Ingrese el texto aqui" onkeypress="return (event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32)" required></textarea>
-				</div>
-				
-				<div class="input-encriptacion">
-					<div class="advertencia-container">
-						<img src="Images/signo-exclamacion.svg" class="signo-advertencia" alt="Signo Advertencia">
-						<h6 class="txt-advertencia">Solo letras minúsculas son permitidas</h6>
+						<button class="encriptar-button">Encriptar</button>
+						<button class="desencriptar-button">Desencriptar</button>
+							
 					</div>
 
-					<button class="encriptar-button">Encriptar</button>
-					<button class="desencriptar-button">Desencriptar</button>
-						
-				</div>
-
-			</section>
-
-			<section class="output-section">
-			
-				<section class="output-section-not-found">
-					<img src="Images/munieco.svg" class="munieco" alt="Personaje buscando">
-					<p class="not-found-title">Ningún mensaje fue encontrado</p>
-					<p class="not-found-text">Ingresa el texto que desees encriptar o desencriptar</p>
 				</section>
 
-				<div>
-					<textarea readonly class="encrypt-decrypt-msg"></textarea>
-					<button class="copiar">Copiar</button>
-				</div>
+				<section class="output-section">
+				
+					<section class="output-section-not-found">
+						<img src="Images/munieco.svg" class="munieco" alt="Personaje buscando">
+						<p class="not-found-title">Ningún mensaje fue encontrado</p>
+						<p class="not-found-text">Ingresa el texto que desees encriptar o desencriptar</p>
+					</section>
 
-			</section>
+					<div>
+						<textarea readonly class="encrypt-decrypt-msg"></textarea>
+						<button class="copiar">Copiar</button>
+					</div>
 
-		</main>
-		
+				</section>
+
+			</main>
+			
+		</div>
 	</body>
 </html>
 
