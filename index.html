@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="Tools/reset.css">
@@ -10,56 +10,61 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 		<title>Encriptador TXT</title>
 	</head>
-	
 
-	<body>
+	<body class="body">
 		<header class="header">
 			<div class="header-imgs">
 				<img class="oracle-logo" src="Images/oracle.png" alt="Logo de Alura">
+				<h1 class="titulo-header">Encriptador</h1>
 				<img class="alura-logo" src="Images/alura.svg" alt="Logo de Alura">
 			</div>
 		</header>
 		
-			<main class="main">
+		<main class="main">
 
-				<section class="input-section">
+			<div class="container">
+				
+				<section class="left-section">
 					
-					<div class="input-textarea">
-						<textarea cols="30" rows="10" autofocus placeholder="Ingrese el texto aqui" onkeypress="return (event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32)" required></textarea>
+					<div class="div-input-textarea">
+						<textarea class="textarea" cols="30" rows="10" autofocus placeholder="Ingrese el texto aqui" onkeypress="return (event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32)" required></textarea>
 					</div>
 					
 					<div class="input-encriptacion">
+
 						<div class="advertencia-container">
 							<img src="Images/signo-exclamacion.svg" class="signo-advertencia" alt="Signo Advertencia">
 							<h6 class="txt-advertencia">Solo letras minúsculas son permitidas</h6>
 						</div>
 
 						<button class="encriptar-button">Encriptar</button>
-						<button class="desencriptar-button">Desencriptar</button>
-							
+						<button class="desencriptar-button">Desencriptar</button>	
 					</div>
 
 				</section>
 
-				<section class="output-section">
+				<section class="right-section">
 				
-					<section class="output-section-not-found">
+					<div class="not-found-div">
 						<img src="Images/munieco.svg" class="munieco" alt="Personaje buscando">
 						<p class="not-found-title">Ningún mensaje fue encontrado</p>
 						<p class="not-found-text">Ingresa el texto que desees encriptar o desencriptar</p>
-					</section>
+					</div>
 
-					<div>
-						<textarea readonly class="encrypt-decrypt-msg"></textarea>
-						<button class="copiar">Copiar</button>
+					<div class="output">
+						<textarea readonly class="output-textarea"></textarea>
+						<button class="button">Copiar</button>
 					</div>
 
 				</section>
 
-			</main>
-			
-		</div>
+			</div>
+
+		</main>
+
 	</body>
+
+	<footer> SOY EL FOOTER </footer>
 </html>
 
 <script src="JS/script.js"></script>

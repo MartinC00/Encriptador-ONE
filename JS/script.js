@@ -25,12 +25,14 @@ desencriptarButton.addEventListener("click", () => {
 });
 
 function mostrarText(text){
-	const textArea = document.querySelector(".encrypt-decrypt-msg");
+	const textArea = document.querySelector(".output-textarea");
+	const divOutput = document.querySelector(".output");
 	textArea.value = text;
+	divOutput.style.display = "block";
 }
 
 function ocultarNotFoundSection(){
-	const outputSection = document.querySelector(".output-section-not-found");
+	const outputSection = document.querySelector(".not-found-div");
 	outputSection.style.display = "none";
 }
 
