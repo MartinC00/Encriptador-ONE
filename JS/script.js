@@ -32,8 +32,10 @@ function mostrarText(text){
 }
 
 function ocultarNotFoundSection(){
-	const outputSection = document.querySelector(".not-found-div");
-	outputSection.style.display = "none";
+	const munieco = document.querySelector(".munieco");
+	const divText = document.querySelector(".not-found-div-text");
+	divText.style.display = "none";
+	munieco.style.display = "none";
 }
 
 function encriptar() 

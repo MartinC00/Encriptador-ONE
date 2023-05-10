@@ -4,14 +4,15 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="Tools/reset.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="CSS/style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="CSS/style.css">
 		<title>Encriptador TXT</title>
 	</head>
 
 	<body class="body">
+
 		<header class="header">
 			<div class="header-imgs">
 				<img class="oracle-logo" src="Images/oracle.png" alt="Logo de Alura">
@@ -30,13 +31,13 @@
 						<textarea class="textarea" cols="30" rows="10" autofocus placeholder="Ingrese el texto aqui" onkeypress="return (event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32)" required></textarea>
 					</div>
 					
-					<div class="input-encriptacion">
 
-						<div class="advertencia-container">
-							<img src="Images/signo-exclamacion.svg" class="signo-advertencia" alt="Signo Advertencia">
-							<h6 class="txt-advertencia">Solo letras minúsculas son permitidas</h6>
-						</div>
-
+					<div class="div-advertencia">
+						<img src="Images/signo-exclamacion.png" class="signo-advertencia" alt="Signo Advertencia">
+						<h6 class="txt-advertencia">Solo letras minúsculas son permitidas</h6>
+					</div>
+					
+					<div class="div-buttons">
 						<button class="encriptar-button">Encriptar</button>
 						<button class="desencriptar-button">Desencriptar</button>	
 					</div>
@@ -44,12 +45,13 @@
 				</section>
 
 				<section class="right-section">
-				
-					<div class="not-found-div">
-						<img src="Images/munieco.svg" class="munieco" alt="Personaje buscando">
-						<p class="not-found-title">Ningún mensaje fue encontrado</p>
-						<p class="not-found-text">Ingresa el texto que desees encriptar o desencriptar</p>
-					</div>
+
+						<img src="Images/atlas.png" class="munieco" alt="Personaje buscando">
+
+						<div class="not-found-div-text">	
+							<p class="not-found-title">Ningún mensaje fue encontrado</p>
+							<p class="not-found-subtitle">Ingrese el texto que desee encriptar o desencriptar</p>
+						</div>
 
 					<div class="output">
 						<textarea readonly class="output-textarea"></textarea>
@@ -62,9 +64,10 @@
 
 		</main>
 
+		<footer> SOY EL FOOTER </footer>
+
 	</body>
 
-	<footer> SOY EL FOOTER </footer>
 </html>
 
 <script src="JS/script.js"></script>
