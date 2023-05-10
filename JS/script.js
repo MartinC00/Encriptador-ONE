@@ -9,7 +9,8 @@ const keys = {
 };
 
 const encriptarButton = document.querySelector(".encriptar-button");
-const desencriptarButton = document.querySelector("button[class='desencriptar-button']");
+const desencriptarButton = document.querySelector(".desencriptar-button");
+const copyButton = document.querySelector(".copy-button");
 
 encriptarButton.addEventListener("click", () => {
 		const textoEncriptado = encriptar();
@@ -24,11 +25,33 @@ desencriptarButton.addEventListener("click", () => {
 		mostrarText(textoDesencriptado);
 });
 
+copyButton.addEventListener("click", () => {
+	
+	// Crea un campo de texto "oculto"
+  var aux = document.createElement("input");
+
+  // Asigna el contenido del elemento especificado al valor del campo
+  aux.setAttribute("value", document.querySelector(".output-textarea").value);
+
+  // Añade el campo a la página
+  document.body.appendChild(aux);
+
+  // Selecciona el contenido del campo
+  aux.select();
+
+  // Copia el texto seleccionado
+  document.execCommand("copy");
+
+  // Elimina el campo de la página
+  document.body.removeChild(aux);
+  alert("Texto copiado !")
+});
+
 function mostrarText(text){
 	const textArea = document.querySelector(".output-textarea");
 	const divOutput = document.querySelector(".output");
 	textArea.value = text;
-	divOutput.style.display = "block";
+	divOutput.style.display = "flex";
 }
 
 function ocultarNotFoundSection(){
