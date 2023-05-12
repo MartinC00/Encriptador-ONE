@@ -13,4 +13,5 @@ El programa consta de 2 partes:
 
 Luego del pilar educativo, el pilar de empleabilidad: el egresado tiene acceso a EmpleaONE, donde puede conectarse con empresas afines a Oracle y Alura Latam.
 
-![Encriptador](https://github.com/MartinC00/Encriptador-ONE/assets/102315066/d14a249d-2eb7-450f-a02d-ba14223f3105)
+![Encriptador](https://github.com/MartinC00/Encriptador-ONE/assets/102315066/d8894fad-d5e6-4906-86a3-2d2c35b1f06e)
+
