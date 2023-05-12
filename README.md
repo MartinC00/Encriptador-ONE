@@ -1,8 +1,8 @@
-#⚙️ Encriptador-ONE
+# ⚙️ Encriptador-ONE
 ChallengeONE: Encriptador de Texto
 ![Encriptador](https://github.com/MartinC00/Encriptador-ONE/assets/102315066/d8894fad-d5e6-4906-86a3-2d2c35b1f06e)
 
-#🔑 Keys
+# 🔑 Keys
 Las llaves de encriptación utilizadas son las siguientes:
 
 * La letra "e" es convertida en "enter"
