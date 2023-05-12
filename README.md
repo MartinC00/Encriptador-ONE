@@ -1,5 +1,7 @@
 # ⚙️ Encriptador-ONE
-ChallengeONE: Encriptador de Texto
+
+ChallengeONE: El encriptador es el desafío final de la primera parte del programa OracleNextEducation.
+
 ![Encriptador](https://github.com/MartinC00/Encriptador-ONE/assets/102315066/d8894fad-d5e6-4906-86a3-2d2c35b1f06e)
 
 # 🔑 Keys
@@ -13,11 +15,9 @@ Las llaves de encriptación utilizadas son las siguientes:
 
 # ⚠️ Requisitos:
 
-*Debe funcionar solo con letras minúsculas
-*No deben ser utilizados letras con acentos ni caracteres especiales
-*Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
-
-El encriptador es el desafío final de la primera parte del programa OracleNextEducation.
+* Debe funcionar solo con letras minúsculas
+* No deben ser utilizados letras con acentos ni caracteres especiales
+* Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
 
 # SINTESIS PROGRAMA ONE
 El programa ONE (OracleNextEducation) es una iniciativa de Oracle y Alura Latam para capacitar y conectar a los nuevos talentos de latinoamerica.
