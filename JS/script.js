@@ -11,6 +11,7 @@ const keys = {
 const encriptarButton = document.querySelector(".encriptar-button");
 const desencriptarButton = document.querySelector(".desencriptar-button");
 const copyButton = document.querySelector(".copy-button");
+const textarea = document.querySelector(".textarea");
 
 encriptarButton.addEventListener("click", () => {
 		const textoEncriptado = encriptar();
@@ -45,6 +46,11 @@ copyButton.addEventListener("click", () => {
   // Elimina el campo de la página
   document.body.removeChild(aux);
   alert("Texto copiado !")
+});
+
+textarea.addEventListener("input", function() {
+  const cleanedText = this.value.toLowerCase().replace(/[^a-z\s]/g, "");
+  this.value = cleanedText;
 });
 
 function mostrarText(text){
@@ -84,4 +90,6 @@ function desencriptar()
 	}
 	return text;
 }
+
+
 
