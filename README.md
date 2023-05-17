@@ -1,5 +1,5 @@
 # ⚙️ Encriptador-ONE 
-Challenge ONE - El encriptador es el desafío final de la primera parte del programa OracleNextEducation.
+Challenge ONE - El encriptador de texto es el desafío final de la primera parte del programa OracleNextEducation. Utiliza los conocimientos enseñados a lo largo de la primera etapa e invita a incorporar otros nuevos como el uso de flexbox.
 
 # 🔑 Keys
 Las llaves de encriptación utilizadas son las siguientes:
